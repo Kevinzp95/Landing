@@ -1,0 +1,575 @@
+﻿/*---------------------Fonts Block------------------*/
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/opensans-regular-webfont.eot');
+    src: url('fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('fonts/opensans-regular-webfont.woff') format('woff'),
+         url('fonts/opensans-regular-webfont.ttf') format('truetype'),
+         url('fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/opensans-bold-webfont.eot');
+    src: url('fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans-bold-webfont.woff2') format('woff2'),
+         url('fonts/opensans-bold-webfont.woff') format('woff'),
+         url('fonts/opensans-bold-webfont.ttf') format('truetype'),
+         url('fonts/opensans-bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/opensans-italic-webfont.eot');
+    src: url('fonts/opensans-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans-italic-webfont.woff2') format('woff2'),
+         url('fonts/opensans-italic-webfont.woff') format('woff'),
+         url('fonts/opensans-italic-webfont.ttf') format('truetype'),
+         url('fonts/opensans-italic-webfont.svg#open_sansitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/opensans-bolditalic-webfont.eot');
+    src: url('fonts/opensans-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans-bolditalic-webfont.woff2') format('woff2'),
+         url('fonts/opensans-bolditalic-webfont.woff') format('woff'),
+         url('fonts/opensans-bolditalic-webfont.ttf') format('truetype'),
+         url('fonts/opensans-bolditalic-webfont.svg#open_sansbold_italic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+/*--------------End of Fonts Block-----------------*/
+*{
+	margin:0px;
+	padding:0px;
+	font-family:"Open Sans", Arial, sans-serif;
+	font-size:16px;
+	z-index:0;
+}
+body{
+	background:#fff;
+	min-width: 320px;
+	min-height:400px;
+}
+#fpage{
+	width:100%;
+	height:100%;
+	position:absolute;
+	background:url("images/buildings.jpg") no-repeat;
+	background-size:cover;
+	z-index:1;
+}
+ul {
+	list-style: none;
+	padding: 0;
+	/*font-size: 0;*/
+	background: #000;
+}
+li {
+	font-family: sans-serif;
+	padding: 5px 20px;
+	background: #900;
+	color: #fff;
+	font-size: 16px;
+	display: inline-block;
+	cursor: pointer;
+}
+.fi{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:40px;
+	background:#120e0e;
+	z-index:200;
+}
+#menu a:link, #menu a:visited, #menu a:active{
+	display:block;
+	border-bottom:2px dotted transparent;
+	color:#fff;
+	font-weight:bold;
+	text-decoration:none;
+	width:80px;
+	padding-bottom:0px;
+	margin:5px 10px 0px 10px;
+	right: 0%;
+	flex-flow: row;
+	text-shadow:1px 1px 0px #000, -1px -1px 0px #000, -1px 1px 0px #000, 1px -1px 0px #000;
+	position:relative;
+	z-index:201;
+}
+#menu a:hover{
+	border-bottom:2px dotted #78768C;
+	}
+.grad{
+	position:absolute;
+	bottom:0px;
+	background:url("images/grad.png") repeat-x;
+	width:100%;
+	height:800px;
+	z-index:2;
+	
+}
+.logo{
+	width:270px;
+	height:270px;
+	background:url("images/logo.png") no-repeat;
+	z-index:3;
+	margin:65px auto 0px auto;
+}
+.deviz{
+	position:relative;
+	font-size:40pt;
+	text-align:center;
+	color:#fff;
+	margin:20px 0px 60px 0px;
+	z-index:3;
+}
+.deviz span{
+	font-weight:bold;
+	font-size:40pt;
+}
+.cf{
+	width:330px;
+	height:330px;
+	background:#fff;
+	z-index:3;
+	position:relative;
+	margin:auto;
+	bottom:10px;
+	border-radius:4px;
+	box-shadow:1px 1px 1px #000;
+}
+#zcode{
+	width:255px;
+	height:30px;
+	margin:40px 0px 40px 30px;
+	border:1px solid #e5e5e5;
+	border-radius:4px;
+	font-size:12pt;
+	color:#b4adad;
+	padding:8px;
+}
+.cf p{
+	display:block;
+	margin:10px;
+	text-align:center;
+	font-size:12pt;
+	color:#b4adad;
+}
+#cfa:link, #cfa:hover, #cfa:visited{
+	display:block;
+	width:190px;
+	margin-left:60px;
+	text-transform:uppercase;
+	color:#fff;
+	background:#227dd3;
+	border-radius:4px;
+	padding:10px;
+	text-align:center;
+	text-decoration:none;
+}
+#cfa:active{
+	background:#1d6ab3;
+}
+.pust{
+	clear:both;
+	width:100%;
+	float:none;
+}
+.bl1 {
+	clear:both;
+	background:#fff;
+	width:100%;
+	height:400px;
+}
+.di{
+	display:block;
+	position:relative;
+	width:940px;
+	padding-top: 150px;
+}
+.doc, .ph{
+	float:left;
+	width:450px;
+	text-align:left;
+}
+.doc img, .ph img{
+	float:left;
+	margin:0px 15px 0px 0px;
+}
+.doc{
+	margin-right:40px;
+	
+}
+.doc p, .ph p{
+	font-weight:bold;
+	font-size:25px;
+	margin-bottom:10px;
+}
+.doc span, .ph span{
+	color:#4f4e4e;
+}
+.bl2{
+	width:100%;
+	height:700px;
+	background: #5fc18b url("images/plan.png") no-repeat 0px 80px;
+}
+.pl{
+	color:white;
+	text-align:center;
+	position:relative;
+	z-index:2;
+}
+.pl p{
+	font-size:250%;
+	padding-top:250px;
+    text-align:center;
+}
+.pl span{
+	width:640px;
+	display:block;
+	margin:auto;
+	text-align:left;
+}
+.polosa{
+	position:relative;
+	width:100%;
+	background:#44a36f url("images/shape.png") no-repeat;
+	background-size:contain;
+	margin-top:-200px;
+	z-index:1;
+}
+.bl3{
+	background:#44a36f;
+	width:100%;
+	color:#fff;
+	height:433px;
+}
+.bl3 img{
+	float:left;
+	margin-right:50px;
+}
+.bl3 > div{
+	margin:auto;
+}
+.bl3 p{
+	font-size:250%;
+}
+.bl3 span{
+	display:block;
+	width:640px;
+	float:left;
+}
+.bl3 a{
+	display:block;
+	padding:10px 15px 10px 15px;
+	border:2px solid #fff;
+	color:white;
+	font-size:20pt;
+	margin-top:25px; 
+	width:200px;
+	text-align:center;
+	text-decoration:none;
+	font-weight:bold;
+	border-radius:5px;
+}
+#smap{
+	width:100%;
+	height:630px;
+}
+.form1{
+	position:relative;
+	display:block;
+	background:rgba(255,255,255,0.8);
+	margin:auto;
+	margin-top:-500px;
+	width:450px;
+	height:450px;
+	border-radius:50%;
+	z-index:10;
+}
+#galochka{
+	position:relative;
+	margin-left:190px;
+	cursor:pointer;
+}
+#name, #email{
+	width:280px;
+	height:25px;
+	border:1px solid #d8d8d8;
+	border-radius:4px;
+	font-size:12pt;
+	color:#bdbec3;
+	padding-left:10px;
+}
+#name{
+	margin:130px 130px 0px 80px;	
+}
+#email{
+	margin:20px 0px 20px 80px;
+}
+#message{
+	margin:0px 0px 30px 80px;
+	border:1px solid #d8d8d8;
+	border-radius:4px;
+	font-size:12pt;
+	color:#bdbec3;
+	padding-left:10px;
+	width:280px;
+	height:80px;
+}
+.footer{
+	background:#43a06d;
+	width:100%;
+	height:30px;
+	margin-top:40px;
+	padding-top:10px;
+}
+.footer p{
+	color:#fff;
+	text-align:center;
+}
+/*============= Adaptive block            =================*/
+@media screen and (max-height: 735px) and (min-height:566px){
+	.deviz, .deviz span{
+		font-size:20pt;
+	}
+	.logo{
+		width:200px;
+		height:200px;
+		margin-top:40px;
+		background:url("images/logo1.png");
+	}
+}
+@media screen and (max-height: 565px) {
+	.deviz{
+		margin: 0px 0px 15px 0px;
+	}
+	.deviz, .deviz span{
+		font-size:20pt;
+	}
+	.logo{
+		width:200px;
+		height:200px;
+		margin-top:20px;
+		background:url("images/logo1.png");
+	}
+	#zcode{
+		margin: 10px 0px 10px 45px;
+	}
+	.cf{
+		height: 250px;
+	}
+}
+
+@media screen and (max-width: 1209px) and (min-width: 1024px)  {
+	.bl3 img{
+		width: 350px;
+		margin-right: 20px;
+	}
+	.doc{
+		margin-right: 10px;
+	}
+}
+@media screen and (max-width: 1023px) and (min-width: 800px)  {
+	.doc{
+		float:none;
+		height:150px;
+	}
+	.di{
+		padding-top:50px;
+		left:0px !important;
+		margin:auto;
+		width:400px;
+	}
+	.bl2{
+		background-position-y: 20px !important;
+	}
+	.pl p{
+		padding-top:200px;
+	}
+	.bl3 img{
+		margin-right:20px;
+	}
+	.bl3 span{
+		float:none;
+		clear:both;
+		position:relative;
+		bottom: 185px;
+		left: 70px;
+	}
+	.bl3{
+		height:500px;
+	}
+}
+@media screen and (max-width: 799px) and (min-width: 420px)  {
+	.doc{
+		float:none;
+		height:150px;
+	}
+	.di{
+		padding-top:50px;
+		left:0px !important;
+		margin:auto;
+		width:300px;
+	}
+	.bl2{
+		background-position-y: 20px !important;
+	}
+	.bl2 span{
+		font-size:10pt;
+		width:400px;
+	}
+	.pl p{
+		padding-top:200px;
+	}
+	.bl3 img{
+		width:320px;
+		float:none;
+	}
+	.bl3 span{
+		float:none;
+		clear:both;
+		width:400px;
+		margin:auto;
+		font-size:10pt;
+	}
+	.bl3{
+		height:500px;
+	}
+	.bl3 p{
+		margin-top:-120px;
+		margin-left:20px;
+	}
+	.doc img, .ph img{
+		width:50px;
+	}
+	.doc p, .ph p{
+		font-size:20pt;
+		margin-bottom:0px;
+	}
+	.di span{
+		font-size:11pt;
+	}
+	.doc, .ph{
+		width:300px;
+	}
+	.form1{
+		width:400px;
+		height:400px;
+	}
+	#name{
+		margin:80px 80px 0px 50px;
+	}
+	#email{
+		margin:20px 0px 20px 50px;
+	}
+	#message{
+		margin:0px 0px 30px 50px;
+	}
+	#galochka{
+		margin-left: 170px;
+	}
+}
+@media screen and (max-width: 419px) {
+	.doc{
+		float:none;
+		height:150px;
+	}
+	.di{
+		padding-top:50px;
+		left:0px !important;
+		margin:auto;
+		width:300px;
+	}
+	.bl1{
+		margin: 150px 0px -50px 0px;
+	}
+	.bl2{
+		background-position-y: 20px !important;
+	}
+	.bl2 span{
+		font-size:10pt;
+		width:400px;
+	}
+	.pl p{
+		padding-top:200px;
+	}
+	.pl span{
+		width:300px;
+	}
+	.bl3 img{
+		width:320px;
+		float:none;
+	}
+	.bl3 span{
+		float:none;
+		clear:both;
+		width:400px;
+		margin:auto;
+		font-size:10pt;
+	}
+	.bl3{
+		height:600px;
+	}
+	.bl3 img{
+		margin:40px 0px 0px -50px;
+	}
+	.bl3 p{
+		margin-top:-120px;
+		margin-left:20px;
+		font-size:28pt;
+	}
+	.bl3 span{
+		width:300px;
+	}
+	.doc img, .ph img{
+		width:50px;
+	}
+	.doc p, .ph p{
+		font-size:20pt;
+		margin-bottom:0px;
+	}
+	.di span{
+		font-size:11pt;
+	}
+	.doc, .ph{
+		width:300px;
+	}
+	.form1{
+		width:300px;
+		height:300px;
+	}
+	#name{
+		margin:80px 80px 0px 50px;
+		padding: 3px 0px 3px 15px;
+	}
+	#email{
+		margin:20px 0px 20px 50px;
+		padding: 3px 0px 3px 15px;
+	}
+	#message{
+		margin:0px 0px 5px 50px;
+		width:200px;
+		height:50px;
+	}
+	#galochka{
+		margin-left: 120px;
+		width:40px;
+		height:40px;
+	}
+	.footer{
+		margin-top:200px;
+		
+	}
+	.footer p{
+		font-size:10pt;
+	}
+
+}
